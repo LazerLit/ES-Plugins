@@ -1,0 +1,41 @@
+start "belter"
+	name "Belter"
+	description `As a native of the stations, rocks and ships which forever spin through the void, the stars are your birthright.`
+	description `	This start is to test Expansive Sky and is subject to change.`
+	thumbnail "land/ceres"
+	system "Solar System"
+	planet "Ceres"
+	date 01 01 2340
+	conversation "belter intro"
+	account
+		credits 20000
+		score 400
+	set "license: Pilot's"
+	set "origin: belter"
+	set "Ceres start"
+
+conversation "belter intro"
+	action
+		log "Got mi ship, copeng. Gonna leave the seteshang and seek mi fortune ona feronte. Sa-sa ke?"
+		give ship "Starting Corvette" "Donkey Hotty"
+	scene "land/ceres"
+	`This day could not have come soon enough. You have your own ship now, after so many years of scrubbing filters, scrounging parts and doing whatever it might take to get ahead. Now you are free.`
+	`	Out there is the whole solar system. Eight planets, dozens of moons, a handful of stations, and more isolated rocks than could be mined in a hundred years! So much is there for the taking.`
+	`	But first you need to get through one more little bit of bueraucracy, one final time that you will sign your name, and then your life can begin for real.`
+	name
+	`	And with that it is done. You stride into the docking bay and admire your ship. Time to fly.`
+
+
+ship "Corvette-class Frigate" "Starting Corvette"
+	outfits
+		"Meteor Missile Launcher" 4
+		"Meteor Missile" 120
+		"Heavy Anti-Missile Turret" 2
+		"NT-200 Nucleovoltaic"
+		"LP072a Battery Pack"
+		"D23-QP Shield Generator"
+		"Small Radar Jammer"
+		"Brig"
+		"Laser Rifle" 12
+		"Greyhound Plasma Thruster"
+		"X3200 Ion Steering"

@@ -1,0 +1,32 @@
+# Copyright (c) 2016 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+minable "ice"
+	sprite "asteroid/ice/spin"
+	hull 990
+	"random hull" 240
+	payload "Ice" 200
+		"toughness" 7000
+	explode "smoke" 20
+	explode "asteroid crunch small"
+
+outfit "Ice"
+	plural "Ice"
+	category "Minerals"
+	cost 200
+	thumbnail "outfit/harvested ice"
+	"flotsam sprite" "effect/flotsam yottrite"
+	"mass" 1
+	"installable" -1
+	"minable" 1
+	description "Without water there is no life, so it is needed everywhere. It is also used as reaction mass in the Epstein Drives used on every spacecraft in the void."

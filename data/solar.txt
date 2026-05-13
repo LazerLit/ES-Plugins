@@ -1,0 +1,227 @@
+# Copyright (c) 2014 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+galaxy "Expansive Sky"
+	pos 112 22
+	sprite "ui/milky way"
+
+system Solar System
+	pos -400 100
+	government "United Nations"
+	ramscoop
+		universal 0
+		multiplier 1.5
+	habitable 108000
+	belt 152900
+	"invisible fence" 1930000
+	minables aluminum 100 5
+	minables copper 100 5
+	minables gold 100 5
+	minables ice 160 7
+	minables iron 80 4.64499
+	minables lead 100 5
+	minables neodymium 100 5
+	minables platinum 100 5
+	minables silicon 200 5
+	minables silver 100 5
+	minables titanium 100 5
+	minables tungsten 100 5
+	minables uranium 100 5
+	trade Clothing 282
+	trade Electronics 745
+	trade Equipment 491
+	trade Food 505
+	trade Industrial 635
+	trade "Luxury Goods" 1159
+	trade Medical 480
+	trade Metal 402
+	trade Water 400
+	trade Fuel 800
+	fleet "Solo Merchant" 100
+	fleet "Merchant Pair" 300
+	fleet "Merchant Trio" 750
+	fleet "Merchant Convoy 1" 900
+	fleet "Merchant Convoy 2" 1000
+	fleet "Ice Miner" 500
+	fleet "Small Transport" 100
+	fleet "UN Patrol" 100
+	fleet "UN Task Force" 500
+	fleet "MCN Patrol" 100
+	fleet "MCN Task Force" 500
+	fleet "OPA Scout" 100
+	fleet "Luxury Yacht" 1000
+	object
+		sprite star/sun
+		period 25.38
+	object Mercury
+		sprite planet/mercury
+		distance 48000
+		period 87.9691
+		offset 207.542
+	object Venus
+		sprite planet/venus
+		distance 72000
+		period 224.701
+		offset 123.21
+	object Earth
+		sprite planet/earth
+		distance 100000
+		period 365.256
+		offset 207.11
+		object Luna
+			sprite planet/luna
+			distance 2572.122
+			period 27.322
+			offset 343.858
+	object Mars
+		sprite planet/mars
+		distance 150000
+		period 686.98
+		offset 261.02
+		object Phobos
+			sprite planet/placeholders/asteroid
+			distance 124.332
+			period 0.319
+		object Deimos
+			sprite planet/placeholders/asteroid
+			distance 313.706
+			period 1.263
+	object Ceres
+		sprite planet/ceres
+		distance 270000
+		period 1680
+		offset 322.374
+	object Vesta
+		sprite planet/placeholders/asteroid
+		distance 280000
+		period 1325.86
+	object Jupiter
+		sprite planet/jupiter
+		distance 520000
+		period 4332.59
+		offset 331.944
+		object Io
+			sprite planet/io
+			distance 563.778
+			period 1.769
+			offset 319.843
+		object Europa
+			sprite planet/europa
+			distance 896.9379
+			period 3.551
+			offset 145.63
+		object Ganymede
+			sprite planet/ganymede
+			distance 1430.5
+			period 7.154
+			offset 209.11
+		object Callisto
+			sprite planet/callisto
+			distance 2513.4
+			period 16.689
+			offset 142.316
+	object Saturn
+		sprite planet/placeholders/saturn
+		distance 950000
+		period 10755.7
+		offset 332.104
+		object Mimas
+			sprite planet/mimas
+			distance 1236.6486
+			period 0.942
+			offset 125.607
+		object Enceladus
+			sprite planet/enceladus
+			distance 1590.9
+			period 1.37
+			offset 272.181
+		object Tethys
+			sprite planet/tethys
+			distance 1969.4
+			period 1.888
+			offset 199.293
+		object Dione
+			sprite planet/dione
+			distance 2522.73
+			period 2.737
+			offset 155.118
+		object Rhea
+			sprite planet/rhea
+			distance 3523.04
+			period 4.518
+			offset 139.572
+		object Titan
+			sprite planet/titan
+			distance 8167.7
+			period 15.945
+			offset 52.3043
+		object Hyperion
+			sprite planet/hyperion
+			distance 9903.21
+			period 21.277
+			offset 108.341
+		object Iapetus
+			sprite planet/iapetus
+			distance 23802.612
+			period 79.321
+			offset 252.262
+	object Uranus
+		sprite planet/uranus
+		distance 1920000
+		period 30688.5
+		offset 25.5051
+		object Miranda
+			sprite planet/miranda
+			distance 864.92
+			period 1.413
+			offset 70.0776
+		object Ariel
+			sprite planet/ariel
+			distance 1276.09
+			period 2.52
+			offset 146.598
+		object Umbriel
+			sprite planet/umbriel
+			distance 1778.1
+			period 4.144
+			offset 21.8958
+		object Titania
+			sprite planet/titania
+			distance 2913.88
+			period 8.706
+			offset 103.755
+		object Oberon
+			sprite planet/oberon
+			distance 390.059
+			period 13.463
+			offset 81.7112
+	object Neptune
+		sprite planet/neptune
+		distance 3000000
+		period 60195
+		offset 22.8364
+		object Triton
+			sprite planet/triton
+			distance 2371.42
+			period 5.877
+			offset 262.625
+	object Pluto
+		sprite planet/pluto
+		distance 3950000
+		period 90560
+		offset 29.7002
+		object Charon
+			sprite planet/charon
+			distance 130.98
+			period 6.387
+			offset 184.821

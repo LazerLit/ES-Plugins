@@ -1,0 +1,539 @@
+# Copyright (c) 2014 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+planet Mercury
+	attributes 
+	landscape
+	government
+	description `The smallest planet of the Sol system and the closest to the Sun, with an average distance of 58 million km, Mercury is also the fastest orbiting planet of the system. Due to its orbital eccentricity, it experiences the greatest temperature variations of any planet in the system.`
+	description `The planet is tidally locked with the Sun in a 3:2 spin-orbit resonance, so it rotates on its axis three times for every two cycles around the Sun, making its way of rotation unique in the system. An observer on Mercury only sees one day every two Mercurian years.`
+	spaceport `With the extreme temperature variation on the planet surface, the only permanent structures are a scattering of orbital stations crewed mostly by planetary and stellar scientists.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Xi-Mallow 434
+	attributes 
+	landscape
+	government
+	description `Xi-Mallow 434 is a small rock with very little gravity. While its orbit is near the Aten asteroids, it is technically an Atira and not an Aten since it never crosses Earth’s orbit, and in fact it doesn't even make it out as far as Venus. The asteroid's rotation is locked, one side always facing the Sun and the other always facing away.`
+	description `	Xi-Mallow 434 has been under UNN military quarantine for 160 years.`
+	spaceport `At the bottom of a natural fissure on the dark side of the asteroid is an airlock, the outer doors half open, the steel frame set into the natural rock is polished and smooth. The inner doors are open too.`
+	spaceport `	Inside is a wide chamber. The walls had been insulated, but the foam has broken down over time leaving long strips that had drifted to the floor. The bare stone in the chamber is polished and worked. Inside, 13 figures in old red vac suits sit in a semicircle under an old black Martian cargo container.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Venus
+	attributes 
+	landscape
+	government
+	description `Venus has by far the densest atmosphere of the terrestrial planets, composed mostly of carbon dioxide with a thick, global sulfuric acid cloud cover. At the surface it has a mean temperature of 737 K (464 °C; 867 °F) and a pressure 92 times that of Earth's at sea level`
+	description `	Eight decades ago, Tycho Manufacturing and Engineering Concern were slated to create a network of high-atmosphere floating cloud cities above Venus. The project was canceled, and led to a lawsuit that is still ongoing today.`
+	spaceport `The spaceport is a ramshackle station which skims the far upper reaches of Venus' thick atmosphere. Built to be the hub from which the aerostat cities would be constructed and launched, the station was never finished and still has long inarticulated gantries hanging down below it.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet		
+
+planet Earth
+	to land
+		not "ships: Battleship"
+		not "ships: Cruiser"
+		not "ships: Heavy Freighter"
+	attributes education factory "near earth" research tourism urban
+	landscape land/earth
+	description `The homeworld of humanity. Governed by the United Nations, Earth is the greatest hub of human politics and still technically the capital planet and dominant superpower. It has always been at the forefront of human history.`
+	description `	Home to more than 30 billion people, Earth is massively overpopulated and polution is a major problem, even with much of the heavy industry having been moved into orbit. Around half of the population subsist on 'Basic Assistance', which provides shared accomodations in government housing complexes, meagre food in the form of bland textured protein and enriched rice, minimal medical care in government clinics, and even recycled paper clothing, dispensed from automated kiosks with a thumbprint.`
+	spaceport `Earth's spaceport is a series of massive buildings; the gaps between them form narrow concrete canyons a hundred stories deep. From a distance it has the appearance of a bustling termite mound.`
+	spaceport `	Inside the towers is a warren of dim hallways and dingy shops. Hitchhikers sleep in the corners of unused docking bays under old army blankets, a few uniformed cleaners try to keep the litter and dust in check, and rich tourists from other stars cling tightly to their expensive cameras.`
+	shipyard "Civilian Small"
+	outfitter "Basics"
+	outfitter "Common"
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet "Large Republic" 50
+
+planet Luna
+	attributes factory moon "near earth" tourism
+	landscape land/luna
+	description `Luna is Earth's only moon, and is the fifth biggest moon in the Sol System. It is under the jurisdiction of the United Nations (UN), and its inhabitants have all the rights and responsibilities of UN citizenship.`
+	description `	Luna functions as a way station between Earth and the rest of the Solar System, and serves as a natural meeting place between residents of the Inner Planets and inhabitants of the Belt and Outers. Due to its lower gravity, Luna is the only body in the Inner System that Belters can easily visit and where they can comfortably remain for any substantial period of time.`
+	spaceport `Luna's space port is located in the lunar city, Lovell, home to the New Hague United Nations facilities. Outer Planets Command and the Outer Planets Governing Board are both located on Luna's surface.`
+	spaceport `	As Earth’s oldest non-terrestrial settlement, much of Luna Station is old and worn, though of course newer construction was added in the intervening centuries. A unique feature of Luna is the stink of gunpowder in the air that every visitor notices when they arrive, the result of lunar dust so fine it passes right through air filters.`
+	shipyard "Civilian Small"
+	shipyard "Civilian Medium"
+	shipyard "Civilian Large"
+	outfitter "Basics"
+	outfitter "Common"
+	bribe 0.05
+	security 0.2
+	tribute 2500
+		threshold 7500
+		fleet "Large Republic" 10
+	hazard "Small Black Hole Gravity"
+
+planet MarsX
+	display name "Mars"
+	government "Martian Congressional Republic"
+	attributes farming "near earth" tourism
+	landscape land/mars
+	description `The seat of the Martian Congressional Republic, and with a population of four billion, Mars is the second most populous body in the solar system, and even so it lags far behind the thronging masses of Earth. Despite this, Mars' culture of extreme efficiency has enabled them to technologically leapfrog the homeworld, and so Martian tech is widely considered the best that can be found. Exemplifying this, the fabled engineer Solomon Epstein designed and built his prototype drive here, as any patriotic martian will tell you.`
+	description `	Considered by some the greatest engineering project in human history, the terraforming project is a driving force of Martian society, involving most of the population of Mars either directly or indirectly. However, it is implied that the project is in decline, due to younger generations of Martians becoming accustomed to living in domed settlements.`
+	spaceport `The capital and largest city of Mars, located in the northern reach of the Aurorae Sinus, Londres Nova also hosts the main spaceport for the planet. Partly underground, and consisting of a webwork of tunnels under the Martian permafrost, the city was created over generations of colonists and prototerraformers, using the soil as insulation and radiation shielding in lieu of a planetary magnetosphere. Many of the original tunnels are now used as tube stations.`
+	shipyard "Civilian Small"
+	shipyard "Civilian Medium"
+	shipyard "Civilian Large"
+	outfitter "Basics"
+	outfitter "Common"
+	security 0.2
+	tribute 1800
+		threshold 4500
+		fleet "Small Republic" 64
+
+planet Phobos
+	attributes 
+	landscape
+	government "Martian Congressional Republic"
+	description `Phobos is getting closer to Mars every time it orbits. Eventually, it will be crushed by Mars's tidal forces in several tens of millions of years. It will likely break up in orbit, possibly creating a ring, that will also likely fall onto Mars itself.`
+	description `	The moon orbits Mars so fast that Martians on the planet's surface observe it to rise in the west and set in the East twice each Martian day.`
+	spaceport `With its high orbital velocity and the frequent 'moonquakes' caused by tidal forces, the only facilities on the surface of Phobos are here to serve the needs of the Martian Marine Corps, which use the moon as a micro-gee training ground.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+		
+planet Deimos
+	attributes 
+	landscape
+	government "Martian Congressional Republic"
+	description `The smaller of the two moons of Mars, Deimos is unremarkable, and could easily be mistaken for a large asteroid.`
+	description `	Since its orbit is equatorial and only slighty slower than the rotation of Mars, it was once earmarked for a typically ambitious Martian project; it would be nudged down into a stationary orbit, and then its mass would be used to build a space elevator. These planse were shelved upon the invention of the Epstein Drive, since the potential savings would no longer be worthwhile.`
+	spaceport `Deimos is home to an advanced listening post which keeps the Martian Congressional Republic abreast of anything of significance which happens in the inner-system, and is even rumored to be able to keep track of the crops grown on Ganymede when Mars and Jupiter are in alignment. A small garrison of Martian Marines act as security for the facility.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Ceres
+	attributes 
+	landscape land/ceres
+	government
+	description `Ceres is the site of Ceres Station, a space station that was one of the first sites of human colonization in the Outer Planets. Half a generation after humanity arrived there, Tycho Manufacturing managed to spin up the asteroid, which gave it a gravity of 0.3 g. The station has tens of thousands of kilometers of tunnels.`
+	description `	As the most important port in the Belt, the station, which has a population of approximately six million permanent residents and an extra one million transiting through at any given time, Ceres is governed by the United Nations, who contract Star Helix Security to maintian the peace in the face of increasing tensions with the residents, most of whom identify as Belters.`
+	spaceport `Gateway to the Outer System, 800 to 1,000 ships are docked here at any given time. The docks are a bustling orgy of colors, sounds and smells which you are unlikely to find anywhere else, which is perhaps for the best.`
+	spaceport `	Nearly every kind of luxury, vice, and tech imaginable can be found here, if you have the cash to pay for it, and the patience and luck to discern the genuine from the counterfeit.`
+	shipyard "Civilian Small"
+	shipyard "Civilian Medium"
+	shipyard "Civilian Large"
+	outfitter "Basics"
+	outfitter "Common"
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Vesta
+	attributes 
+	landscape
+	government
+	description `The second most massive body in the belt, after Ceres, Vesta hosts one of the largest settlements in the outer planets.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Pallas
+	attributes 
+	landscape
+	government
+	description `The third largest body in the belt, and one of the oldest inhabited stations, Pallas is these days known for two things; the extremist Belter splinter groups who make this rock their home, and the extensive refinement equipment which can turn any ore into a valuable commodity.`
+	description `	Unlike Ceres, Pallas was never artificially spun up, relying on the asteroid's natural microgravity instead. Because the gravity is only 2% as strong as Earth's, humans that live on Pallas have some of the most extreme Belter features, their bodies taller and their heads larger than even most other Belters. Despite the various drugs to mitigate the effects of null-g, blindness can still occur after years of living on Pallas due to the eye capillaries dying.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Hygiea
+	attributes 
+	landscape
+	government
+	description `Hygiea is noticably oblong and so appears to wobble as it spins. Like many places in the Belt, its population suffers from high UN taxes that make survival expensive and keep the population destitute. Consequently, a robust black market is active, particularly in usable hydroponics.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Eros
+	attributes 
+	landscape
+	government
+	description `Roughly the shape of a potato, Eros was more difficult to spin up than Ceres, and its surface velocity was considerably higher for the same effective gravity. The internal caverns of Eros are said to have been the birthplace of the Belt.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Herculina
+	attributes 
+	landscape
+	government
+	description `532 Herculina is a large asteroid, approximately 260 by 220 by 215 km. It is not spherical, but rather has a blocky shape. The asteroid has been given artificial spin, giving it a gravity of approximately .28 g. Two external ship ports are visible on the exterior of the asteroid. There are also several other smaller airlocks (for access to the asteroid’s surface) and external venting shafts at different locations around it.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet 45 Eugenia
+	attributes 
+	landscape
+	government
+	description `Eugenia is a large, F-type carbonaceous asteroid with a diameter of 214 km. Its density is unusually low as it is less an asteroid than a complex pile of loose scrap and black gravel traveling in company.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Oshima
+	attributes 
+	landscape
+	government
+	description `Oshima is part of the Veritas family of asteroids and located in the outer regions of the asteroid belt. It is a carbonaceous C-type asteroid and has a rotation period of 12.5 hours.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Mausoleum
+	attributes 
+	landscape
+	government
+	description `Mausoleum was an abandoned early colony in the Belt. Established in 2226 as an unlicened mining colony, the group who colonised this asteriod called themselves the Cassiopeia Collective.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Io
+	attributes 
+	landscape
+	government
+	description `Io is one of the moons of Jupiter and the fourth largest moon in the Sol system, slightly larger than Luna. It is the innermost of the "Galilean moons", the main group of Jupiter's moons that were discovered first. There are numerous volcanoes across the moon that spew molten silicate into the atmosphere. Io houses research labs and supplies power cells to the Belt.`
+	description `Unlike some of Jupiter's moons, Io isn't shielded from the gas giant's intense radiation, with a standard vac suit being insufficient to protect its user. Combined with it's tectonic instability, this makes it rather unsuitable for human habitation.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Europa
+	attributes 
+	landscape
+	government
+	description `Europa is slightly smaller than Luna and is primarily made of silicate rock with a water-ice crust. It has a very thin atmosphere, composed primarily of oxygen.`
+	description `	A human settlement grows vegetables and beef in big mirror-fed greenhouses and is a vital source of food for the Belt.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Ganymede
+	attributes 
+	landscape
+	government
+	description `The largest moon in the Sol system, and the only one with its own magnetosphere, giving it the ability to deflect charged ionizing radiation, Ganymede has found a niche as the bread-basket of the outer system. Vast orbital mirrors reflect extra sunlight down on to large greenhouse domes, within which crops have been engineered to thrive in the low gravity.`
+	description `	Another bonus of the magnetic field is that Ganymede has gained a reputation as the safest place in the Jovian system to give birth, with a markedly lower number of birth defects. Women come to the moon to deliver their babies, and a significant industry of pre- and post-natal care supplements the income from the crops grown here.`
+	outfitter
+	trade Food -20
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Callisto
+	attributes 
+	landscape
+	government "Martian Congressional Republic"
+	description `Callisto is the second-largest moon of Jupiter and the third-largest in the Sol system. It houses the Callisto Shipyards, the Martian Congressional Republic's primary military shipyards. As the moon has no other protection from the harsh Jovian radiation, the population makes their homes in subterranean cities, burrowed in to the hard rock.`
+	description `In addition to the mining and shipbuilding industries, Callisto boasts a respected university, with close ties to the technical institutes of Mars.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Cyllene
+	attributes 
+	landscape
+	government
+	description ``
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Mimas
+	attributes 
+	landscape
+	government
+	description ``
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Enceladus
+	attributes 
+	landscape
+	government
+	description ``
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+		
+planet Tethys
+	attributes 
+	landscape
+	government
+	description ``
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Dione
+	attributes 
+	landscape
+	government
+	description ``
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Rhea
+	attributes 
+	landscape
+	government
+	description `Rhea, also Saturn V is the second-largest moon of Saturn. It consists mainly of ice and rock. The moon is colonized and holds Helium-3 refineries.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Titan
+	attributes 
+	landscape
+	government
+	description `Titan is the largest moon of Saturn and, after Ganymede, the second-largest natural satellite in the Sol system. It is 50% larger than Luna and 80% more massive, and is the only moon known to have a dense atmosphere.`
+	description `	The moon is known for its dome resorts and attracts multitudes of tourists from throughout the system.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Corley Station
+	attributes 
+	landscape
+	government
+	description ``
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+		
+planet Hyperion
+	attributes 
+	landscape
+	government
+	description ``
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Iapetus
+	attributes 
+	landscape
+	government
+	description `Iapetus is heavily cratered and its overall shape is neither spherical nor ellipsoid, but has a bulging waistline from its unique equatorial ridge and squashed poles. The moon's low density is due to being mostly composed of ice, with only a small (~20%) amount of rocky materials. Lights glitter on the surface of the moon, marking automated stations where ice is quarried and split.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Iapetus Station
+	attributes 
+	landscape
+	government
+	description `The design of this station is old, consisting of two long counter-rotating arms supporting habitation rings and a central docking station on the axis. Tugs, flying teakettle, rise up from automated mining stations on the surface hauling ice, and drop down to the surface for another load. The docks are filled with ancient water haulers, their hulls studded with shipping containers filled with ice.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Phoebe
+	attributes 
+	landscape
+	government
+	description `A small ice moon with an irregular orbit, Phoebe is thought to have originally come from the Kuiper belt and been captured by Saturn's gravity.`
+	description `	Following Martian drilling, a small research station has been established here, in conjunction with the Earth corporation Protogen, to study the composition of Kuiper belt bodies.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Titania
+	attributes 
+	landscape
+	government
+	description `Titania is the largest of the moons of Uranus and is the site of a modest science base housing approximately 5,000 people. The science base is the second furthest outpost from Earth, with only the deep astronomy labs on Triton (orbitng Neptune) being further.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Triton
+	attributes 
+	landscape
+	government
+	description `The deep astronomy labs on Triton are the most distant outpost of humanity, as the site offers the only remaining place in the system out of the reach of the otherwise pervasive radio signals which keep human civilization flourishing.`
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Pluto
+	attributes 
+	landscape
+	government
+	description ``
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+
+planet Charon
+	attributes 
+	landscape
+	government
+	description ``
+	outfitter
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet
+

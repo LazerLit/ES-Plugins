@@ -1,0 +1,77 @@
+# Copyright (c) 2014 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+shipyard "Civilian Large"
+	"Hauler III"
+	"Mammoth"
+
+shipyard "Civilian Medium"
+	"Hauler II"
+
+shipyard "Civilian Small"
+	"Hauler"
+	"Freighter"
+	"Racing Pinnace"
+
+shipyard "Unmanned"
+	"Mining Drone"
+	"Probe"
+
+outfitter "Basics"
+	"X1700 Ion Thruster"
+	"X1200 Ion Steering"
+	"X2700 Ion Thruster"
+	"X2200 Ion Steering"
+	"LP036a Battery Pack"
+	"LP072a Battery Pack"
+	"nGVF-AA Fuel Cell"
+	"nGVF-BB Fuel Cell"
+	"Cooling Ducts"
+	"Meteor Missile"
+	"Cargo Scanner"
+	"Pilot's License"
+
+outfitter "Common"
+	"X1700 Ion Thruster"
+	"X1200 Ion Steering"
+	"X2700 Ion Thruster"
+	"X2200 Ion Steering"
+	"LP036a Battery Pack"
+	"LP072a Battery Pack"
+	"KP-6 Photovoltaic Panel"
+	"KP-6 Photovoltaic Array"
+	"nGVF-AA Fuel Cell"
+	"nGVF-BB Fuel Cell"
+	"Cooling Ducts"
+	"Water Coolant System"
+	"Meteor Missile"
+	"Cargo Scanner"
+	"X3700 Ion Thruster"
+	"X3200 Ion Steering"
+	"LP144a Battery Pack"
+	"nGVF-CC Fuel Cell"
+	"Small Radar Jammer"
+	"Blaster Turret"
+	"Meteor Missile Launcher"
+	"Meteor Missile Pod"
+	"Meteor Missile Box"
+	"Outfits Expansion"
+	"Cargo Expansion"
+	"Small Bunk Room"
+	"Bunk Room"
+	"Fuel Pod"
+	"Volcano Afterburner"
+	"Outfit Scanner"
+	"Asteroid Scanner"
+	"Supercapacitor"
+	"Pilot's License"
